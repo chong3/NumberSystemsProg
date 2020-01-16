@@ -3,7 +3,7 @@ function FormatAndShowOutput(values, part) {
      case 1:
       document.getElementById('ConversionOutput').textContent =
         Number(values[0]) + " in base " + Number(values[1]) + " is " +
-        Number(values[3]) + " in base " + Number(values[2]);
+        values[3] + " in base " + Number(values[2]);
      break;
      case 2:
        document.getElementById('ConversionOutput').textContent =
