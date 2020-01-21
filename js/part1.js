@@ -7,7 +7,6 @@ function ConversionPart1() {
     outputValue = convertBase(UnsignedInt, UnsignedIntBaseFrom, UnsignedIntBaseTo);
     // Show the output on the screen
     FormatAndShowOutput([UnsignedInt, UnsignedIntBaseFrom, UnsignedIntBaseTo, outputValue], 1);
-
   }
 
   function convertBase(num, base1, base2){
