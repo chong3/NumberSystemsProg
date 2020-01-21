@@ -3,10 +3,12 @@ function ConversionPart1() {
     var UnsignedInt = parseInt(document.getElementById("1_UnsignedInt").value);
     var UnsignedIntBaseFrom = parseInt(document.getElementById("1_UnsignedIntBaseToConvertFrom").value);
     var UnsignedIntBaseTo = parseInt(document.getElementById("1_UnsignedIntBaseToConvertTo").value);
+    var outputValue;
+    outputValue = convertBase(UnsignedInt, UnsignedIntBaseFrom, UnsignedIntBaseTo);
+    // Show the output on the screen
+    FormatAndShowOutput([UnsignedInt, UnsignedIntBaseFrom, UnsignedIntBaseTo, outputValue], 1);
 
-
-
-  var outputValue;
+  }
 
   function convertBase(num, base1, base2){
     var value;
@@ -85,8 +87,3 @@ function ConversionPart1() {
     }
     return output;
   }
-  outputValue = convertBase(UnsignedInt, UnsignedIntBaseFrom, UnsignedIntBaseTo);
-  // Show the output on the screen
-  FormatAndShowOutput([UnsignedInt, UnsignedIntBaseFrom, UnsignedIntBaseTo, outputValue], 1);
-
-}
